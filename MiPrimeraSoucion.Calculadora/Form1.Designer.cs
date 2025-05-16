@@ -46,12 +46,13 @@ namespace MiPrimeraSoucion.Calculadora
             this.BTNIgual = new System.Windows.Forms.Button();
             this.BTNNumero0 = new System.Windows.Forms.Button();
             this.buttonC = new System.Windows.Forms.Button();
+            this.BTNResiduo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // VentanaResultadosTXT
             // 
             this.VentanaResultadosTXT.Location = new System.Drawing.Point(17, 24);
-            this.VentanaResultadosTXT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.VentanaResultadosTXT.Margin = new System.Windows.Forms.Padding(2);
             this.VentanaResultadosTXT.Name = "VentanaResultadosTXT";
             this.VentanaResultadosTXT.Size = new System.Drawing.Size(300, 20);
             this.VentanaResultadosTXT.TabIndex = 0;
@@ -59,7 +60,7 @@ namespace MiPrimeraSoucion.Calculadora
             // BTNNumero1
             // 
             this.BTNNumero1.Location = new System.Drawing.Point(25, 90);
-            this.BTNNumero1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTNNumero1.Margin = new System.Windows.Forms.Padding(2);
             this.BTNNumero1.Name = "BTNNumero1";
             this.BTNNumero1.Size = new System.Drawing.Size(56, 58);
             this.BTNNumero1.TabIndex = 1;
@@ -70,7 +71,7 @@ namespace MiPrimeraSoucion.Calculadora
             // BTNNUmber3
             // 
             this.BTNNUmber3.Location = new System.Drawing.Point(177, 90);
-            this.BTNNUmber3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTNNUmber3.Margin = new System.Windows.Forms.Padding(2);
             this.BTNNUmber3.Name = "BTNNUmber3";
             this.BTNNUmber3.Size = new System.Drawing.Size(56, 58);
             this.BTNNUmber3.TabIndex = 2;
@@ -81,7 +82,7 @@ namespace MiPrimeraSoucion.Calculadora
             // BTNNumero2
             // 
             this.BTNNumero2.Location = new System.Drawing.Point(104, 90);
-            this.BTNNumero2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTNNumero2.Margin = new System.Windows.Forms.Padding(2);
             this.BTNNumero2.Name = "BTNNumero2";
             this.BTNNumero2.Size = new System.Drawing.Size(56, 58);
             this.BTNNumero2.TabIndex = 3;
@@ -92,7 +93,7 @@ namespace MiPrimeraSoucion.Calculadora
             // BTNSuma
             // 
             this.BTNSuma.Location = new System.Drawing.Point(249, 90);
-            this.BTNSuma.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTNSuma.Margin = new System.Windows.Forms.Padding(2);
             this.BTNSuma.Name = "BTNSuma";
             this.BTNSuma.Size = new System.Drawing.Size(56, 58);
             this.BTNSuma.TabIndex = 4;
@@ -103,7 +104,7 @@ namespace MiPrimeraSoucion.Calculadora
             // BTNResta
             // 
             this.BTNResta.Location = new System.Drawing.Point(249, 153);
-            this.BTNResta.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTNResta.Margin = new System.Windows.Forms.Padding(2);
             this.BTNResta.Name = "BTNResta";
             this.BTNResta.Size = new System.Drawing.Size(56, 58);
             this.BTNResta.TabIndex = 8;
@@ -114,7 +115,7 @@ namespace MiPrimeraSoucion.Calculadora
             // BTNNumero5
             // 
             this.BTNNumero5.Location = new System.Drawing.Point(104, 153);
-            this.BTNNumero5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTNNumero5.Margin = new System.Windows.Forms.Padding(2);
             this.BTNNumero5.Name = "BTNNumero5";
             this.BTNNumero5.Size = new System.Drawing.Size(56, 58);
             this.BTNNumero5.TabIndex = 7;
@@ -125,7 +126,7 @@ namespace MiPrimeraSoucion.Calculadora
             // BTNNumero6
             // 
             this.BTNNumero6.Location = new System.Drawing.Point(177, 153);
-            this.BTNNumero6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTNNumero6.Margin = new System.Windows.Forms.Padding(2);
             this.BTNNumero6.Name = "BTNNumero6";
             this.BTNNumero6.Size = new System.Drawing.Size(56, 58);
             this.BTNNumero6.TabIndex = 6;
@@ -136,7 +137,7 @@ namespace MiPrimeraSoucion.Calculadora
             // BTNNumero4
             // 
             this.BTNNumero4.Location = new System.Drawing.Point(25, 153);
-            this.BTNNumero4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTNNumero4.Margin = new System.Windows.Forms.Padding(2);
             this.BTNNumero4.Name = "BTNNumero4";
             this.BTNNumero4.Size = new System.Drawing.Size(56, 58);
             this.BTNNumero4.TabIndex = 5;
@@ -147,7 +148,7 @@ namespace MiPrimeraSoucion.Calculadora
             // BTNMultiplicacion
             // 
             this.BTNMultiplicacion.Location = new System.Drawing.Point(249, 215);
-            this.BTNMultiplicacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTNMultiplicacion.Margin = new System.Windows.Forms.Padding(2);
             this.BTNMultiplicacion.Name = "BTNMultiplicacion";
             this.BTNMultiplicacion.Size = new System.Drawing.Size(56, 58);
             this.BTNMultiplicacion.TabIndex = 12;
@@ -158,7 +159,7 @@ namespace MiPrimeraSoucion.Calculadora
             // BTNNumero8
             // 
             this.BTNNumero8.Location = new System.Drawing.Point(104, 215);
-            this.BTNNumero8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTNNumero8.Margin = new System.Windows.Forms.Padding(2);
             this.BTNNumero8.Name = "BTNNumero8";
             this.BTNNumero8.Size = new System.Drawing.Size(56, 58);
             this.BTNNumero8.TabIndex = 11;
@@ -169,7 +170,7 @@ namespace MiPrimeraSoucion.Calculadora
             // BTNNumero9
             // 
             this.BTNNumero9.Location = new System.Drawing.Point(177, 215);
-            this.BTNNumero9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTNNumero9.Margin = new System.Windows.Forms.Padding(2);
             this.BTNNumero9.Name = "BTNNumero9";
             this.BTNNumero9.Size = new System.Drawing.Size(56, 58);
             this.BTNNumero9.TabIndex = 10;
@@ -180,7 +181,7 @@ namespace MiPrimeraSoucion.Calculadora
             // BTNNumero7
             // 
             this.BTNNumero7.Location = new System.Drawing.Point(25, 215);
-            this.BTNNumero7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTNNumero7.Margin = new System.Windows.Forms.Padding(2);
             this.BTNNumero7.Name = "BTNNumero7";
             this.BTNNumero7.Size = new System.Drawing.Size(56, 58);
             this.BTNNumero7.TabIndex = 9;
@@ -191,7 +192,7 @@ namespace MiPrimeraSoucion.Calculadora
             // BTNDivision
             // 
             this.BTNDivision.Location = new System.Drawing.Point(249, 286);
-            this.BTNDivision.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTNDivision.Margin = new System.Windows.Forms.Padding(2);
             this.BTNDivision.Name = "BTNDivision";
             this.BTNDivision.Size = new System.Drawing.Size(56, 58);
             this.BTNDivision.TabIndex = 16;
@@ -202,7 +203,7 @@ namespace MiPrimeraSoucion.Calculadora
             // BTNIgual
             // 
             this.BTNIgual.Location = new System.Drawing.Point(177, 286);
-            this.BTNIgual.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTNIgual.Margin = new System.Windows.Forms.Padding(2);
             this.BTNIgual.Name = "BTNIgual";
             this.BTNIgual.Size = new System.Drawing.Size(56, 58);
             this.BTNIgual.TabIndex = 14;
@@ -213,7 +214,7 @@ namespace MiPrimeraSoucion.Calculadora
             // BTNNumero0
             // 
             this.BTNNumero0.Location = new System.Drawing.Point(104, 286);
-            this.BTNNumero0.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BTNNumero0.Margin = new System.Windows.Forms.Padding(2);
             this.BTNNumero0.Name = "BTNNumero0";
             this.BTNNumero0.Size = new System.Drawing.Size(56, 58);
             this.BTNNumero0.TabIndex = 13;
@@ -232,11 +233,22 @@ namespace MiPrimeraSoucion.Calculadora
             this.buttonC.UseVisualStyleBackColor = true;
             this.buttonC.Click += new System.EventHandler(this.buttonC_Click);
             // 
+            // BTNResiduo
+            // 
+            this.BTNResiduo.Location = new System.Drawing.Point(25, 349);
+            this.BTNResiduo.Name = "BTNResiduo";
+            this.BTNResiduo.Size = new System.Drawing.Size(56, 58);
+            this.BTNResiduo.TabIndex = 18;
+            this.BTNResiduo.Text = "%";
+            this.BTNResiduo.UseVisualStyleBackColor = true;
+            this.BTNResiduo.Click += new System.EventHandler(this.BTNResiduo_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 388);
+            this.ClientSize = new System.Drawing.Size(334, 462);
+            this.Controls.Add(this.BTNResiduo);
             this.Controls.Add(this.buttonC);
             this.Controls.Add(this.BTNDivision);
             this.Controls.Add(this.BTNIgual);
@@ -254,7 +266,7 @@ namespace MiPrimeraSoucion.Calculadora
             this.Controls.Add(this.BTNNUmber3);
             this.Controls.Add(this.BTNNumero1);
             this.Controls.Add(this.VentanaResultadosTXT);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -281,6 +293,7 @@ namespace MiPrimeraSoucion.Calculadora
         private System.Windows.Forms.Button BTNIgual;
         private System.Windows.Forms.Button BTNNumero0;
         private System.Windows.Forms.Button buttonC;
+        private System.Windows.Forms.Button BTNResiduo;
     }
 }
 

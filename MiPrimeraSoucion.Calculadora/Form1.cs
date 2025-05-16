@@ -111,7 +111,10 @@ namespace MiPrimeraSoucion.Calculadora
                         break;
                 case "/":
                         Dividir();
-                        break;
+                    break;
+                case "%":
+                    Dividir();
+                    break;
                 default:
                     
                         break;
@@ -160,6 +163,12 @@ namespace MiPrimeraSoucion.Calculadora
         private void Dividir()
         {
             numeroDos = int.Parse(VentanaResultadosTXT.Text);
+            if (numeroDos == 0)
+            {
+                MessageBox.Show("No se puede dividir entre cero", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                VentanaResultadosTXT.Text = string.Empty;//esto lo que ahce es vaciar el string 
+                return;
+            }
             resultado = numeroUno / numeroDos;
             VentanaResultadosTXT.Text = resultado.ToString();
         }
@@ -168,6 +177,19 @@ namespace MiPrimeraSoucion.Calculadora
             numeroUno = int.Parse(VentanaResultadosTXT.Text);
             VentanaResultadosTXT.Text = string.Empty;//esto lo que ahce es vaciar el string 
             operador = "/";
+        }
+
+        private void Residuo()
+        {
+            numeroDos = int.Parse(VentanaResultadosTXT.Text);
+            resultado = numeroUno % numeroDos;
+            VentanaResultadosTXT.Text = resultado.ToString();   
+        }
+        private void BTNResiduo_Click(object sender, EventArgs e)
+        {
+            numeroUno = int.Parse(VentanaResultadosTXT.Text);
+            VentanaResultadosTXT.Text = string.Empty;//esto lo que ahce es vaciar el string 
+            operador = "%";
         }
 
         private void BTNNumero4_Click(object sender, EventArgs e)
@@ -229,5 +251,7 @@ namespace MiPrimeraSoucion.Calculadora
                 VentanaResultadosTXT.Text = string.Empty;
             }
         }
+
+       
     }
 }
