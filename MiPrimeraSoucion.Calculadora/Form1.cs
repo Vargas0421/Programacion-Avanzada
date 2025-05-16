@@ -12,9 +12,9 @@ namespace MiPrimeraSoucion.Calculadora
 {
     public partial class Form1 : Form
     {
-        int numeroUno = 0;
-        int numeroDos = 0;
-        int resultado = 0;
+        double numeroUno = 0;
+        double numeroDos = 0;
+        double resultado = 0;
         string operador = string.Empty;
 
 
@@ -115,6 +115,9 @@ namespace MiPrimeraSoucion.Calculadora
                 case "%":
                     Dividir();
                     break;
+                case "^":
+                    Potencia();
+                    break;
                 default:
                     
                         break;
@@ -125,44 +128,44 @@ namespace MiPrimeraSoucion.Calculadora
 
         private void Sumar()
         {
-            numeroDos = int.Parse(VentanaResultadosTXT.Text);
+            numeroDos = double.Parse(VentanaResultadosTXT.Text);
             resultado = numeroUno + numeroDos;
             VentanaResultadosTXT.Text = resultado.ToString();
         }
         private void BTNSuma_Click(object sender, EventArgs e)
         {
-            numeroUno = int.Parse(VentanaResultadosTXT.Text);
+            numeroUno = double.Parse(VentanaResultadosTXT.Text);
             VentanaResultadosTXT.Text = string.Empty;//esto lo que ahce es vaciar el string 
             operador = "+";
 
         }
         private void Restar()
         {
-            numeroDos = int.Parse(VentanaResultadosTXT.Text);
+            numeroDos = double.Parse(VentanaResultadosTXT.Text);
             resultado = numeroUno - numeroDos;
             VentanaResultadosTXT.Text = resultado.ToString();
         }
         private void BTNResta_Click(object sender, EventArgs e)
         {
-            numeroUno = int.Parse(VentanaResultadosTXT.Text);
+            numeroUno = double.Parse(VentanaResultadosTXT.Text);
             VentanaResultadosTXT.Text = string.Empty;//esto lo que ahce es vaciar el string 
             operador = "-";
         }
         private void Multiplicar()
         {
-            numeroDos = int.Parse(VentanaResultadosTXT.Text);
+            numeroDos = double.Parse(VentanaResultadosTXT.Text);
             resultado = numeroUno * numeroDos;
             VentanaResultadosTXT.Text = resultado.ToString();
         }
         private void BTNMultiplicacion_Click(object sender, EventArgs e)
         {
-            numeroUno = int.Parse(VentanaResultadosTXT.Text);
+            numeroUno = double.Parse(VentanaResultadosTXT.Text);
             VentanaResultadosTXT.Text = string.Empty;//esto lo que ahce es vaciar el string 
             operador = "*";
         }
         private void Dividir()
         {
-            numeroDos = int.Parse(VentanaResultadosTXT.Text);
+            numeroDos = double.Parse(VentanaResultadosTXT.Text);
             if (numeroDos == 0)
             {
                 MessageBox.Show("No se puede dividir entre cero", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -174,23 +177,39 @@ namespace MiPrimeraSoucion.Calculadora
         }
         private void BTNDivision_Click(object sender, EventArgs e)
         {
-            numeroUno = int.Parse(VentanaResultadosTXT.Text);
+            numeroUno = double.Parse(VentanaResultadosTXT.Text);
             VentanaResultadosTXT.Text = string.Empty;//esto lo que ahce es vaciar el string 
             operador = "/";
         }
 
         private void Residuo()
         {
-            numeroDos = int.Parse(VentanaResultadosTXT.Text);
+            numeroDos = double.Parse(VentanaResultadosTXT.Text);
             resultado = numeroUno % numeroDos;
             VentanaResultadosTXT.Text = resultado.ToString();   
         }
         private void BTNResiduo_Click(object sender, EventArgs e)
         {
-            numeroUno = int.Parse(VentanaResultadosTXT.Text);
+            numeroUno = double.Parse(VentanaResultadosTXT.Text);
             VentanaResultadosTXT.Text = string.Empty;//esto lo que ahce es vaciar el string 
             operador = "%";
         }
+
+        private void Potencia()
+        {
+            numeroDos = double.Parse(VentanaResultadosTXT.Text);
+            resultado = Math.Pow(numeroUno, numeroDos);
+            VentanaResultadosTXT.Text = resultado.ToString();
+        }
+        
+
+        private void BTNPotencia_Click(object sender, EventArgs e)
+        {
+            numeroUno = double.Parse(VentanaResultadosTXT.Text);
+            VentanaResultadosTXT.Text = string.Empty;//esto lo que ahce es vaciar el string 
+            operador = "^";
+        }
+    
 
         private void BTNNumero4_Click(object sender, EventArgs e)
         {
@@ -252,6 +271,13 @@ namespace MiPrimeraSoucion.Calculadora
             }
         }
 
-       
+        private void BTNPuntoDecimal_Click(object sender, EventArgs e)
+        {
+                if (VentanaResultadosTXT.Text != "")
+                {
+                    VentanaResultadosTXT.Text = VentanaResultadosTXT.Text + ",";
+                }
+            
+        }
     }
 }
