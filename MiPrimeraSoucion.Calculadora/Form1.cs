@@ -279,5 +279,14 @@ namespace MiPrimeraSoucion.Calculadora
                 }
             
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (VentanaResultadosTXT.Text != string.Empty)
+            {
+                int largoDelTexto = VentanaResultadosTXT.Text.Length;
+                VentanaResultadosTXT.Text = VentanaResultadosTXT.Text.Substring(0, largoDelTexto - 1);
+            }
+        }
     }
 }

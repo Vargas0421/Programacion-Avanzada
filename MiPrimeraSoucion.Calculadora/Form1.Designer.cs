@@ -49,6 +49,7 @@ namespace MiPrimeraSoucion.Calculadora
             this.BTNResiduo = new System.Windows.Forms.Button();
             this.BTNPotencia = new System.Windows.Forms.Button();
             this.BTNPuntoDecimal = new System.Windows.Forms.Button();
+            this.BTNBorrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // VentanaResultadosTXT
@@ -94,7 +95,7 @@ namespace MiPrimeraSoucion.Calculadora
             // 
             // BTNSuma
             // 
-            this.BTNSuma.Location = new System.Drawing.Point(177, 278);
+            this.BTNSuma.Location = new System.Drawing.Point(249, 341);
             this.BTNSuma.Margin = new System.Windows.Forms.Padding(2);
             this.BTNSuma.Name = "BTNSuma";
             this.BTNSuma.Size = new System.Drawing.Size(56, 58);
@@ -207,7 +208,7 @@ namespace MiPrimeraSoucion.Calculadora
             this.BTNIgual.Location = new System.Drawing.Point(177, 341);
             this.BTNIgual.Margin = new System.Windows.Forms.Padding(2);
             this.BTNIgual.Name = "BTNIgual";
-            this.BTNIgual.Size = new System.Drawing.Size(128, 58);
+            this.BTNIgual.Size = new System.Drawing.Size(56, 58);
             this.BTNIgual.TabIndex = 14;
             this.BTNIgual.Text = "=";
             this.BTNIgual.UseVisualStyleBackColor = true;
@@ -265,11 +266,23 @@ namespace MiPrimeraSoucion.Calculadora
             this.BTNPuntoDecimal.UseVisualStyleBackColor = true;
             this.BTNPuntoDecimal.Click += new System.EventHandler(this.BTNPuntoDecimal_Click);
             // 
+            // BTNBorrar
+            // 
+            this.BTNBorrar.Location = new System.Drawing.Point(177, 279);
+            this.BTNBorrar.Margin = new System.Windows.Forms.Padding(2);
+            this.BTNBorrar.Name = "BTNBorrar";
+            this.BTNBorrar.Size = new System.Drawing.Size(56, 58);
+            this.BTNBorrar.TabIndex = 21;
+            this.BTNBorrar.Text = "<--";
+            this.BTNBorrar.UseVisualStyleBackColor = true;
+            this.BTNBorrar.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(334, 462);
+            this.Controls.Add(this.BTNBorrar);
             this.Controls.Add(this.BTNPuntoDecimal);
             this.Controls.Add(this.BTNPotencia);
             this.Controls.Add(this.BTNResiduo);
@@ -320,6 +333,7 @@ namespace MiPrimeraSoucion.Calculadora
         private System.Windows.Forms.Button BTNResiduo;
         private System.Windows.Forms.Button BTNPotencia;
         private System.Windows.Forms.Button BTNPuntoDecimal;
+        private System.Windows.Forms.Button BTNBorrar;
     }
 }
 
