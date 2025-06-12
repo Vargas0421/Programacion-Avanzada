@@ -1,0 +1,98 @@
+﻿@model MiPrimeraSolucion.Abstracciones.ModelosParaUI.InventarioDto
+
+@{
+    ViewBag.Title = "DetallesDelRepuesto";
+}
+
+<h2>DetallesDelRepuesto</h2>
+
+<div>
+    <h4>InventarioDto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.codigoDelRepuesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.codigoDelRepuesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreDelRepuesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreDelRepuesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.marcaDelRepuesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.marcaDelRepuesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vehiculo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vehiculo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.modelo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.modelo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.anio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.anio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaDeRegistro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaDeRegistro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaDeModificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaDeModificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "EditarRepuesto", new {  id = Model.id  }) |
+    @Html.ActionLink("Volver a la lista", "ListarInventario")
+</p>

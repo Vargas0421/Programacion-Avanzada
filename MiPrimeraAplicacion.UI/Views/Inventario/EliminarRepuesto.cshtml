@@ -1,0 +1,104 @@
+﻿@model MiPrimeraSolucion.Abstracciones.ModelosParaUI.InventarioDto
+
+@{
+    ViewBag.Title = "EliminarRepuesto";
+}
+
+<h2>EliminarRepuesto</h2>
+
+<h3>Estas seguro que quieres eliminar este repuesto??</h3>
+<div>
+    <h4> @Html.DisplayFor(model => model.nombreDelRepuesto) de un @Html.DisplayFor(model => model.vehiculo)  </h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.codigoDelRepuesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.codigoDelRepuesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreDelRepuesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreDelRepuesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.marcaDelRepuesto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.marcaDelRepuesto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.vehiculo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vehiculo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.modelo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.modelo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.anio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.anio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaDeRegistro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaDeRegistro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaDeModificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaDeModificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            @Html.ActionLink("Back to List", "ListarInventario")
+        </div>
+    }
+</div>

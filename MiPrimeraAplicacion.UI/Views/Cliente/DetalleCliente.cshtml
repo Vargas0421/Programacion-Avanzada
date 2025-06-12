@@ -1,0 +1,98 @@
+﻿@model MiPrimeraSolucion.Abstracciones.ModelosParaUI.ClienteDto
+
+@{
+    ViewBag.Title = "DetalleCliente";
+}
+
+<h2>DetalleCliente</h2>
+
+<div>
+    <h4>ClienteDTo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.identificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.identificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.primerApellido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.primerApellido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.segundoApellido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.segundoApellido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.correo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.correo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.direccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.direccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaDeRegistro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaDeRegistro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaDeModificacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaDeModificacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

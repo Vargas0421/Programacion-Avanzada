@@ -1,0 +1,97 @@
+﻿@model IEnumerable<MiPrimeraSolucion.Abstracciones.ModelosParaUI.InventarioDto>
+
+@{
+    ViewBag.Title = "ListarInventario";
+}
+
+<h2>ListarInventario</h2>
+
+<p>
+    @Html.ActionLink("Crear un nuevo repuesto", "CrearRepusto", null, new { @class = "btn btn-primary" })
+    <!--<button class="btn btn-success" id="miPrimerAlerta"> Mostrar alerta</button>-->
+</p>
+<table class="table" id="tablaInventario">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.codigoDelRepuesto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombreDelRepuesto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.marcaDelRepuesto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vehiculo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.modelo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.anio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cantidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechaDeRegistro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fechaDeModificacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.estado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.codigoDelRepuesto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombreDelRepuesto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.marcaDelRepuesto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.vehiculo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.modelo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.anio)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.cantidad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fechaDeRegistro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.fechaDeModificacion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.estado)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "EditarRepuesto", new {  id=item.id  }) |
+                    @Html.ActionLink("Details", "DetallesDelRepuesto", new {  id=item.id  }) |
+                    @Html.ActionLink("Delete", "EliminarRepuesto", new { id=item.id  })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts{
+    <script src="~/Scripts/Inventario/ListarInventario/MiPrimerScript.js"></script>
+    
+}
+

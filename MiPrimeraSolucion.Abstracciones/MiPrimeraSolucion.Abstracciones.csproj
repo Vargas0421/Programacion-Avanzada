@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E122EAE-604E-43BA-A5BD-B79481B492F4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MiPrimeraSolucion.Abstracciones</RootNamespace>
+    <AssemblyName>MiPrimeraSolucion.Abstracciones</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccesoADatos\Cliente\ActualizarCliente\IActualizarClienteAD.cs" />
+    <Compile Include="AccesoADatos\Cliente\CrearCliente\ICrearClieteAD.cs" />
+    <Compile Include="AccesoADatos\Cliente\EliminarCliente\IEliminarClienteAD.cs" />
+    <Compile Include="AccesoADatos\Cliente\ListarCliente\IListarClienteAD.cs" />
+    <Compile Include="AccesoADatos\Cliente\ObtenerClientePorId\IObtenerClientePorIdAD.cs" />
+    <Compile Include="AccesoADatos\Inventario\ActualizarInventario\IActualizarInventarioAD.cs" />
+    <Compile Include="AccesoADatos\Inventario\CrearInventario\ICrearInventarioAD.cs" />
+    <Compile Include="AccesoADatos\Inventario\EliminarInventairo\IEliminarInventarioAD.cs" />
+    <Compile Include="AccesoADatos\Inventario\ListarInventario\IListarInventarioAD.cs" />
+    <Compile Include="AccesoADatos\Inventario\ObtenerInventario\IObtenerInventarioPorIdAD.cs" />
+    <Compile Include="Comunes\Fecha\IFechaLN.cs" />
+    <Compile Include="LogicaDeNegocio\Cliente\ActualizarCliente\IActualizarClienteLN.cs" />
+    <Compile Include="LogicaDeNegocio\Cliente\AgregarCliente\IAgregarClienteLN.cs" />
+    <Compile Include="LogicaDeNegocio\Cliente\EliminarCliente\IEliminarClienteLN.cs" />
+    <Compile Include="LogicaDeNegocio\Cliente\ListarCliente\IListarClienteLN.cs" />
+    <Compile Include="LogicaDeNegocio\Cliente\ObtenerClientePorId\IObtenerClientePorIdLN.cs" />
+    <Compile Include="LogicaDeNegocio\Inventario\ActualizarInventario\IActualizarInventarioLN.cs" />
+    <Compile Include="LogicaDeNegocio\Inventario\AgregarInventario\ICrearInventarioLN.cs" />
+    <Compile Include="LogicaDeNegocio\Inventario\EliminarInventario\IEliminarInventarioLN.cs" />
+    <Compile Include="LogicaDeNegocio\Inventario\ListarInventario\IListarInventarioLN.cs" />
+    <Compile Include="LogicaDeNegocio\Inventario\ObtenerInventarioPorId\IObetenerInventrioPorIdLN.cs" />
+    <Compile Include="ModelosParaUI\ClienteDto.cs" />
+    <Compile Include="ModelosParaUI\InventarioDto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
